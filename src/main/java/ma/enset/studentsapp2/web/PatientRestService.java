@@ -22,4 +22,23 @@ public class PatientRestService {
     public Patient findById(@PathVariable Long id){
         return patientRepository.findById(id).get();
     }
+//    @Override
+//    public Patient createUser(Patient patient) {
+//        return patientRepository.save(patient);
+//    }
+//
+//    @Override
+//    public Patient updateUser(Long id, Patient patient) {
+//        Patient existingUser = patients().get(Math.toIntExact(id));
+//        if (existingUser == null) {
+//            return null;
+//        }
+//        patient.setId(id);
+//        return patientRepository.save(patient);
+//    }
+//
+//    @Override
+//    public void deleteUser(Long id) {
+//        patientRepository.deleteById(id);
+//    }
 }
